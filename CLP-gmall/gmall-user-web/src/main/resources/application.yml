@@ -1,0 +1,28 @@
+#server:
+#  port: 8082
+#
+##jdbc
+#spring:
+#   #    配置dubbo
+#   #zookeeper地址 注册的项目名称 扫描的包
+#  dubbo:
+#    registry:
+#      address: 120.77.219.77:2181
+#      protocol: zookeeper
+#    application:
+#      name: gmall-user-web
+#    protocol:
+#      name: dubbo
+#    base-package: com.zuoshao.gmall
+#
+#
+##开启debug调试
+#logging:
+#  level: debug
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+server:
+  port: 8081
+
+
+
+#jdbc
+spring:
+  datasource:
+    url: jdbc:mysql://120.77.219.77:3306/gmall?useSSL=false
+    username: root
+    password: 199828
+#thymelafe配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+    check-template-location: true
+   #    配置dubbo
+   #zookeeper地址 注册的项目名称 扫描的包
+  dubbo:
+    registry:
+      address: 120.77.219.77:2181
+      protocol: zookeeper
+    application:
+      name: gmall-user
+    protocol:
+      name: dubbo
+    base-package: com.zuoshao.gmall
+
+
+#mybatis
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/*mapper.xml
+
+
+
+#开启debug调试
+logging:
+  level: debug
+
+
+
+
+
+
+
